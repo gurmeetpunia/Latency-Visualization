@@ -22,11 +22,9 @@ Before you begin, ensure you have the following installed:
 ## Installation
 
 1. Clone the repository:
-
 ```bash
-git clone [your-repository-url]
-cd latency-visualizer
-```
+git clone https://github.com/gurmeetpunia/Latency-Visualization.git
+cd Latency-Visualization
 
 2. Install the dependencies:
 
@@ -114,4 +112,4 @@ yarn dev
 
 ## Repository
 
-[Add your GitHub repository link here]
+The project is hosted on GitHub: [Latency-Visualization](https://github.com/gurmeetpunia/Latency-Visualization)
