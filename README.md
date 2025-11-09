@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Latency Visualizer
 
-## Getting Started
+A real-time network latency visualization tool built with Next.js and Three.js. This application provides an interactive 3D globe visualization of network latency between different points, featuring heatmaps, performance metrics, and historical data.
 
-First, run the development server:
+## Features
+
+- 3D Globe visualization using Three.js
+- Real-time latency visualization with heatmap overlay
+- Interactive network topology view
+- Historical performance metrics
+- Dynamic atmosphere and starfield effects
+- Responsive control panel for data filtering
+- Light/Dark theme support
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- npm (comes with Node.js) or [yarn](https://yarnpkg.com/)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repository-url]
+cd latency-visualizer
+```
+
+2. Install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+## Running Locally
+
+1. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Core Technologies
 
-## Learn More
+- [Next.js](https://nextjs.org/) (v16.0.1) - React framework for production
+- [React](https://reactjs.org/) (v19.2.0) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Three.js](https://threejs.org/) (v0.181.0) - 3D graphics library
 
-To learn more about Next.js, take a look at the following resources:
+### UI Components and Styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) (v9.4.0) - React renderer for Three.js
+- [@react-three/drei](https://drei.pmnd.rs/) (v10.7.6) - Useful helpers for React Three Fiber
+- [@headlessui/react](https://headlessui.com/) - Unstyled, accessible UI components
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Data Visualization
 
-## Deploy on Vercel
+- [Recharts](https://recharts.org/) - Composable charting library for historical data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/src/app` - Next.js application core files
+- `/src/components` - React components including 3D visualizations
+- `/src/contexts` - React context providers
+- `/src/lib` - Utility functions and data handling
+- `/public/textures` - 3D texture assets
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the application for production
+- `npm run start` - Runs the built application
+- `npm run lint` - Runs ESLint for code quality
+
+## Assumptions and Design Decisions
+
+1. **Performance Considerations**
+
+   - The application assumes a modern browser with WebGL support
+   - Optimized for desktop viewing with mobile responsiveness
+   - Uses client-side rendering for real-time updates
+
+2. **Data Structure**
+
+   - Latency data is expected in a specific format (documented in Data.ts)
+   - Real-time updates are simulated for demonstration purposes
+
+3. **Visual Design**
+   - Globe visualization prioritizes clarity over geographical accuracy
+   - Color schemes chosen for optimal contrast in both light and dark modes
+   - Performance metrics are displayed with a focus on readability
+
+## License
+
+[Specify your license here]
+
+## Contributing
+
+[Add your contribution guidelines here]
+
+## Repository
+
+[Add your GitHub repository link here]
