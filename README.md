@@ -102,14 +102,4 @@ yarn dev
    - Color schemes chosen for optimal contrast in both light and dark modes
    - Performance metrics are displayed with a focus on readability
 
-## License
 
-[Specify your license here]
-
-## Contributing
-
-[Add your contribution guidelines here]
-
-## Repository
-
-The project is hosted on GitHub: [Latency-Visualization](https://github.com/gurmeetpunia/Latency-Visualization)
